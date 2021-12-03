@@ -36,7 +36,6 @@ TEST*.xml
 Thumbs.db
 
 # Applications
-*.app
 *.exe
 *.war
 
@@ -48,11 +47,14 @@ Thumbs.db
 *.mov
 *.wmv
 
-.vscode/*
-.alpackages/*
+#.vscode/*
+#.alpackages/*
+#**/.alcache
+*.app
 
 *.json
 !app.json
+!rad.json
 !settings.json
 !app.json
 !launch.json 
