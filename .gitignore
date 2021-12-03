@@ -48,14 +48,16 @@ Thumbs.db
 *.wmv
 
 # .vscode/*
-# .alpackages/*
-# **/.alcache
+# .alpackages/
+# .vscode/.alcache
+
+# *.json
+# !app.json
+# !rad.json
+# !settings.json
+# !app.json
+# !launch.json 
+
 *.app
-
-*.json
-!app.json
-!rad.json
-!settings.json
-!app.json
-!launch.json 
-
+*.xlf
+.alcache
