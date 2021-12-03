@@ -47,9 +47,9 @@ Thumbs.db
 *.mov
 *.wmv
 
-#.vscode/*
-#.alpackages/*
-#**/.alcache
+# .vscode/*
+# .alpackages/*
+# **/.alcache
 *.app
 
 *.json
