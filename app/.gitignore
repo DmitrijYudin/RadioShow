@@ -56,7 +56,8 @@ Thumbs.db
 # !rad.json
 # !settings.json
 # !app.json
-# !launch.json 
+# !launch.json
+ 
 
 *.app
 *.xlf

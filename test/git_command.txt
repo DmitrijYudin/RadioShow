@@ -1,0 +1,12 @@
+create new repository in github with readme
+copy link
+
+to pull new repository comands type in VSCode terminal
+
+git init
+git remote add origin https://github.com/DmitrijYudin/RadioShow.git
+git config --global user.name "Dmitrij Yudin"
+git config --global user.email dmitrijy@gmail.com
+git pull --all
+
+then pick on main branch and choose the remote branch
