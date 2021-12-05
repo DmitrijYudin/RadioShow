@@ -1,6 +1,6 @@
-table 50103 "Playlist Line"
+table 50103 "RSH Playlist Line"
 {
-    Caption = 'Playlist Line';
+    Caption = 'RSH Playlist Line';
     DataClassification = ToBeClassified;
 
     fields
@@ -15,13 +15,13 @@ table 50103 "Playlist Line"
             Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
-        field(10; "Type"; Option)
+        field(10; Type; Option)
         {
             Caption = 'Type';
             DataClassification = CustomerContent;
             OptionMembers = ,Resource,Show,Item;
         }
-        field(11; "Playlist Line Type"; Enum "Playlist Line Type")
+        field(11; "Playlist Line Type"; Enum "RSH Playlist Line Type")
         {
             Caption = 'Playlist Line Type';
             DataClassification = ToBeClassified;
@@ -37,7 +37,7 @@ table 50103 "Playlist Line"
             DataClassification = CustomerContent;
             OptionMembers = ,Vinyl,CD,MP3,PSA,Advertisement;
         }
-        field(31; "Playlist Line Data Format"; Enum "Playlist Line Data Format")
+        field(31; "Playlist Line Data Format"; Enum "RSH Playlist Line Data Format")
         {
             Caption = 'Playlist Line Data Format';
             DataClassification = CustomerContent;

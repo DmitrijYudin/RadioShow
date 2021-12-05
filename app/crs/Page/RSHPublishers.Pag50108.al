@@ -1,11 +1,10 @@
-page 50108 "Publishers"
+page 50108 "RSH Publishers"
 {
-
-    ApplicationArea = All;
-    Caption = 'Publishers';
+    Caption = 'RSH Publishers';
     PageType = List;
-    SourceTable = Publisher;
+    SourceTable = "RSH Publisher";
     UsageCategory = Lists;
+    ApplicationArea = All;
 
     layout
     {

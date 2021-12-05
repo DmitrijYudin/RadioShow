@@ -1,0 +1,11 @@
+{
+    "name": "Ruleset",
+    "description": "Adjusted Rules",
+    "rules": [
+        {
+            "id": "AA0215",
+            "action": "None",
+            "justification": "Use Env standard file naming convention"
+        }
+    ]
+}

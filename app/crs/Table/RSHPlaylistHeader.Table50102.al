@@ -1,6 +1,6 @@
-table 50102 "Playlist Header"
+table 50102 "RSH Playlist Header"
 {
-    Caption = 'Playlist Header';
+    Caption = 'RSH Playlist Header';
     DataClassification = ToBeClassified;
 
     fields

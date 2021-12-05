@@ -1,11 +1,11 @@
-table 50106 "Listenership Entry"
+table 50106 "RSH Listenership Entry"
 {
-    Caption = 'Listenership Entry';
+    Caption = 'RSH Listenership Entry';
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; "Entry No. "; Integer)
+        field(1; "Entry No."; Integer)
         {
             Caption = 'Entry No. ';
             DataClassification = ToBeClassified;
@@ -45,7 +45,7 @@ table 50106 "Listenership Entry"
             Caption = 'Audience Share';
             DataClassification = ToBeClassified;
         }
-        field(80; "Age Demographic"; Enum "Radio Show Age Demographic")
+        field(80; "Age Demographic"; Enum "RSH Radio Show Age Demographic")
         {
             Caption = 'Age Demographic';
             DataClassification = ToBeClassified;
@@ -53,7 +53,7 @@ table 50106 "Listenership Entry"
     }
     keys
     {
-        key(PK; "Entry No. ")
+        key(PK; "Entry No.")
         {
             Clustered = true;
         }

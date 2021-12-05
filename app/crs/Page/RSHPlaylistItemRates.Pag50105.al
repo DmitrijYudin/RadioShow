@@ -1,10 +1,10 @@
-page 50105 "Playlist Item Rates"
+page 50105 "RSH Playlist Item Rates"
 {
 
     ApplicationArea = All;
-    Caption = 'Playlist Item Rates';
+    Caption = 'RSH Playlist Item Rates';
     PageType = List;
-    SourceTable = "Playlist Item Rate";
+    SourceTable = "RSH Playlist Item Rate";
     UsageCategory = Lists;
 
     layout

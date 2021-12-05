@@ -1,9 +1,9 @@
-table 50100 "Radio Show"
+table 50100 "RSH Radio Show"
 {
-    Caption = 'Radio Show';
+    Caption = 'RSH Radio Show';
     DataClassification = CustomerContent;
-    LookupPageId = "Radio Show List";
-    DrillDownPageId = "Radio Show List";
+    LookupPageId = "RSH Radio Show List";
+    DrillDownPageId = "RSH Radio Show List";
     fields
     {
         field(1; "No."; Code[20])
@@ -13,7 +13,7 @@ table 50100 "Radio Show"
 
             trigger OnValidate()
             var
-                RadioShowSetup: Record "Radio Show Setup";
+                RadioShowSetup: Record "RSH Radio Show Setup";
                 NoSeriesMgt: Codeunit NoSeriesManagement;
             begin
                 if "No." <> xRec."No." then begin
@@ -27,7 +27,7 @@ table 50100 "Radio Show"
         {
             Caption = 'Radio Show Type';
             DataClassification = CustomerContent;
-            TableRelation = "Radio Show Type";
+            TableRelation = "RSH Radio Show Type";
 
         }
         field(20; Name; Text[50])
@@ -83,7 +83,7 @@ table 50100 "Radio Show"
             DataClassification = ToBeClassified;
             OptionMembers = Hourly,Daily,Weekly,Mounthly;
         }
-        field(1001; "Frequency Enum"; Enum Frequency)
+        field(1001; "Frequency Enum"; Enum "RSH Frequency")
         {
             Caption = 'Frequency Enum';
             DataClassification = ToBeClassified;
@@ -173,7 +173,7 @@ table 50100 "Radio Show"
 
     local procedure InitInsert()
     var
-        RadioShowSetup: Record "Radio Show Setup";
+        RadioShowSetup: Record "RSH Radio Show Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
     begin
         if "No." <> '' then
@@ -182,7 +182,7 @@ table 50100 "Radio Show"
         NoSeriesMgt.InitSeries(RadioShowSetup."Radio Show Nos.", xRec."No. Series", 0D, "No.", "No. Series");
     end;
 
-    local procedure TestNoSeries(var RadioShowSetup: Record "Radio Show Setup")
+    local procedure TestNoSeries(var RadioShowSetup: Record "RSH Radio Show Setup")
     // var
     //     RadioShowNosErr: Label 'The field %1 should not be empty in Table %2!', Comment = '%1 = fieldCaption,%2 = TableCaption';
     begin

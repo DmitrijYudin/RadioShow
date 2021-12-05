@@ -1,6 +1,6 @@
-table 50105 "Radio Show Entry"
+table 50105 "RSH Radio Show Entry"
 {
-    Caption = 'Radio Show Entry';
+    Caption = 'RSH Radio Show Entry';
     DataClassification = ToBeClassified;
 
     fields
@@ -15,7 +15,7 @@ table 50105 "Radio Show Entry"
             Caption = 'Radio Show No.';
             DataClassification = CustomerContent;
         }
-        field(20; "Type"; Enum "Radio Show Entry Type")
+        field(20; Type; Enum "RSH Radio Show Entry Type")
         {
             Caption = 'Type';
             DataClassification = CustomerContent;
@@ -25,7 +25,7 @@ table 50105 "Radio Show Entry"
             Caption = 'No.';
             DataClassification = CustomerContent;
         }
-        field(40; "Data format"; Enum "Playlist Line Data Format")
+        field(40; "Data format"; Enum "RSH Playlist Line Data Format")
         {
             Caption = 'Data format';
             DataClassification = CustomerContent;

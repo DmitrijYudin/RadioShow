@@ -1,24 +1,24 @@
-table 50107 "Publisher"
+table 50108 "RSH test"
 {
-    Caption = 'Publisher';
+    Caption = 'RSH test';
     DataClassification = ToBeClassified;
 
     fields
     {
-        field(1; "Code"; Code[20])
+        field(1; No; Code[20])
         {
-            Caption = 'Code';
+            Caption = 'No';
             DataClassification = CustomerContent;
         }
-        field(10; Discription; Text[50])
+        field(2; Name; Text[50])
         {
-            Caption = 'Discription';
+            Caption = 'Name';
             DataClassification = CustomerContent;
         }
     }
     keys
     {
-        key(PK; "Code")
+        key(PK; No)
         {
             Clustered = true;
         }

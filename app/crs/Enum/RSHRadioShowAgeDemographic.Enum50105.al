@@ -1,7 +1,7 @@
-enum 50105 "Radio Show Age Demographic"
+enum 50105 "RSH Radio Show Age Demographic"
 {
     Extensible = true;
-    
+
     value(0; "")
     {
         Caption = '';
@@ -26,5 +26,5 @@ enum 50105 "Radio Show Age Demographic"
     {
         Caption = '51+';
     }
-    
+
 }

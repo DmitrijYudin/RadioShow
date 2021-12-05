@@ -1,7 +1,7 @@
-enum 50103 "Playlist Item Rate Sourse Type"
+enum 50103 "RSH Playlist Item Sourse Type"
 {
     Extensible = true;
-    
+
     value(0; Vendor)
     {
         Caption = 'Vendor';
@@ -10,5 +10,5 @@ enum 50103 "Playlist Item Rate Sourse Type"
     {
         Caption = 'Customer';
     }
-    
+
 }

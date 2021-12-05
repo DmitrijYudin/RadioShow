@@ -7,7 +7,7 @@
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:DataSourceID>ac604dc1-00a3-4013-b35e-275c1d9299d4</rd:DataSourceID>
+      <rd:DataSourceID>4851287c-9dda-4af6-9c01-f5b674bd1eac</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <ReportSections>
@@ -18,18 +18,18 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.60417in</Width>
+                  <Width>1.89583in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.60417in</Width>
+                  <Width>1.89583in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.60417in</Width>
+                  <Width>1.89583in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.36458in</Height>
+                  <Height>0.29167in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -70,7 +70,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!NoCaption.Value</Value>
+                                  <Value>=Parameters!HostNoCaption.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -124,7 +124,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.36458in</Height>
+                  <Height>0.29167in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -158,21 +158,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Name">
+                        <Textbox Name="HostNo">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Name.Value</Value>
+                                  <Value>=Fields!HostNo.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Name</rd:DefaultName>
+                          <rd:DefaultName>HostNo</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -238,21 +238,21 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.66146cm</Top>
-            <Left>2.91042cm</Left>
-            <Height>0.72916in</Height>
-            <Width>4.81251in</Width>
+            <Top>0.13542in</Top>
+            <Left>0.41667in</Left>
+            <Height>0.58333in</Height>
+            <Width>5.6875in</Width>
             <Style>
               <Border>
-                <Style>Solid</Style>
+                <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.83333in</Height>
+        <Height>2in</Height>
         <Style />
       </Body>
-      <Width>7.51042in</Width>
+      <Width>6.5in</Width>
       <Page>
         <Style />
       </Page>

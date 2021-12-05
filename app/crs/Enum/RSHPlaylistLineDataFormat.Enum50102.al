@@ -1,4 +1,4 @@
-enum 50102 "Playlist Line Data Format"
+enum 50102 "RSH Playlist Line Data Format"
 {
     Extensible = true;
 

@@ -1,15 +1,15 @@
-report 50100 "Radio Show"
+report 50100 "RSH Radio Show"
 {
-    ApplicationArea = All;
-    Caption = 'Radio Show';
+    Caption = 'RSH Radio Show';
     UsageCategory = ReportsAndAnalysis;
-    WordLayout = 'crs\layout\RadioShows.docx';
-    RDLCLayout = 'crs\layout\RadioShows.RDLC';
+    ApplicationArea = All;
+    WordLayout = 'crs\layout\RSHRadioShows.docx';
+    RDLCLayout = 'crs\layout\RSHRadioShows.RDLC';
     DefaultLayout = Word;
 
     dataset
     {
-        dataitem(RadioShow; "Radio Show")
+        dataitem("RSH RadioShow"; "RSH Radio Show")
         {
             column(No; "No.")
             {

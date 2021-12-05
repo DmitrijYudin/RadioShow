@@ -1,6 +1,6 @@
-table 50104 "Playlist Item Rate"
+table 50104 "RSH Playlist Item Rate"
 {
-    Caption = 'Playlist Item Rate';
+    Caption = 'RSH Playlist Item Rate';
     DataClassification = ToBeClassified;
 
     fields
@@ -11,7 +11,7 @@ table 50104 "Playlist Item Rate"
             DataClassification = CustomerContent;
             OptionMembers = Vendor,Customer;
         }
-        field(10; "Playlist Item Rate Sourse Type"; Enum "Playlist Item Rate Sourse Type")
+        field(10; "Playlist Item Rate Sourse Type"; Enum "RSH Playlist Item Sourse Type")
         {
             Caption = 'Playlist Item Rate Sourse Type';
             DataClassification = CustomerContent;

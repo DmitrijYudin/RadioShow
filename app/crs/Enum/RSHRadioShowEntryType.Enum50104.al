@@ -1,14 +1,14 @@
-enum 50101 "Playlist Line Type"
+enum 50104 "RSH Radio Show Entry Type"
 {
     Extensible = true;
-    
+
     value(0; "")
     {
         Caption = '';
     }
-    value(1; Resource)
+    value(1; Resourse)
     {
-        Caption = 'Resource';
+        Caption = 'Resourse';
     }
     value(2; Show)
     {
@@ -18,5 +18,5 @@ enum 50101 "Playlist Line Type"
     {
         Caption = 'Item';
     }
-    
+
 }

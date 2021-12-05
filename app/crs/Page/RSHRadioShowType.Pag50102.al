@@ -1,11 +1,10 @@
-page 50102 "Radio Show Type"
+page 50102 "RSH Radio Show Type"
 {
-
-    ApplicationArea = All;
-    Caption = 'Radio Show Type';
+    Caption = 'RSH Radio Show Type';
     PageType = List;
-    SourceTable = "Radio Show Type";
+    SourceTable = "RSH Radio Show Type";
     UsageCategory = Lists;
+    ApplicationArea = All;
 
     layout
     {

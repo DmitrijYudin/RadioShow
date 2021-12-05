@@ -1,9 +1,9 @@
-table 50101 "Radio Show Type"
+table 50101 "RSH Radio Show Type"
 {
-    Caption = 'Radio Show Type';
+    Caption = 'RSH Radio Show Type';
     DataClassification = ToBeClassified;
-    LookupPageId = "Radio Show Type";
-    DrillDownPageId = "Radio Show Type";
+    LookupPageId = "RSH Radio Show Type";
+    DrillDownPageId = "RSH Radio Show Type";
 
     fields
     {

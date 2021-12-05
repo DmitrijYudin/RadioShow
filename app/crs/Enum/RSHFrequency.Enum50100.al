@@ -1,4 +1,4 @@
-enum 50100 "Frequency"
+enum 50100 "RSH Frequency"
 {
     Extensible = true;
 

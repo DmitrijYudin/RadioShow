@@ -1,12 +1,61 @@
 {
     "al.defaultLaunchConfigurationName": "Deploy",
-    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
-    "CRS.FileNamePatternExtensions": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
-    "CRS.FileNamePatternPageCustomizations": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShort><ObjectId>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShort><ObjectId>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShort><ObjectId>.al",
     "CRS.AlSubFolderName": "None",
     "CRS.OnSaveAlFileAction": "Rename",
-    "CRS.ObjectNamePrefix": "",
+    "CRS.ObjectNamePrefix": "RSH ",
     "CRS.ObjectNameSuffix": "",
     "CRS.RemoveSuffixFromFilename": false,
-    "CRS.RemovePrefixFromFilename": false
+    "CRS.RemovePrefixFromFilename": false,
+    // "al.ruleSetPath": "./ruleset.json",
+    // "al.enableCodeAnalysis": true,
+    // "al.codeAnalyzers": [
+    //     "${CodeCop}",
+    //     "${PerTenantExtensionCop}", // not for ISV
+    //     // "${AppSourceCop}", // for ISV
+    //     "${UICop}" 
+    // ],
 }
+
+// {
+//     "al.defaultLaunchConfigurationName": "Deploy",
+//     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+//     "CRS.FileNamePatternExtensions": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+//     "CRS.FileNamePatternPageCustomizations": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.<ObjectTypeShortPascalCase><ObjectId>.al",
+//     "CRS.AlSubFolderName": "None",
+//     "CRS.OnSaveAlFileAction": "Rename",
+//     "CRS.ObjectNamePrefix": "RSH ",
+//     "CRS.ObjectNameSuffix": "",
+//     "CRS.RemoveSuffixFromFilename": false,
+//     "CRS.RemovePrefixFromFilename": false,
+//     "al.ruleSetPath": "./ruleset.json",
+//     "al.enableCodeAnalysis": true,
+//     "al.codeAnalyzers": [
+//         "${CodeCop}",
+//         "${PerTenantExtensionCop}", // not for ISV
+//         // "${AppSourceCop}", // for ISV
+//         "${UICop}" 
+//     ],
+// }
+
+// {
+//     "al.defaultLaunchConfigurationName": "Deploy",
+//     "CRS.FileNamePattern": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.al",
+//     "CRS.FileNamePatternExtensions": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.al",
+//     "CRS.FileNamePatternPageCustomizations": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.al",
+//     "CRS.AlSubFolderName": "None",
+//     "CRS.OnSaveAlFileAction": "Rename",
+//     "CRS.ObjectNamePrefix": "RSH ",
+//     "CRS.ObjectNameSuffix": "",
+//     "CRS.RemoveSuffixFromFilename": false,
+//     "al.ruleSetPath": "./ruleset.json",
+//     "al.enableCodeAnalysis": true,
+//     "al.codeAnalyzers": [
+//         "${CodeCop}",
+//         "${PerTenantExtensionCop}", // not for ISV
+//         // "${AppSourceCop}", // for ISV
+//         "${UICop}" 
+//     ],
+// }

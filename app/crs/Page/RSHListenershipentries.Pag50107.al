@@ -1,10 +1,10 @@
-page 50107 "Listenership entries"
+page 50107 "RSH Listenership entries"
 {
 
     ApplicationArea = All;
-    Caption = 'Listenership entries';
+    Caption = 'RSH Listenership entries';
     PageType = List;
-    SourceTable = "Listenership Entry";
+    SourceTable = "RSH Listenership Entry";
     UsageCategory = Lists;
 
     layout
@@ -13,7 +13,7 @@ page 50107 "Listenership entries"
         {
             repeater(General)
             {
-                field("Entry No. "; Rec."Entry No. ")
+                field("Entry No."; Rec."Entry No.")
                 {
                     ToolTip = 'Specifies the value of the Entry No.  field.';
                     ApplicationArea = All;

@@ -1,9 +1,10 @@
-page 50120 "Radio Show Setup"
+page 50120 "RSH Radio Show Setup"
 {
-
-    Caption = 'Radio Show Setup';
+    Caption = 'RSH Radio Show Setup';
     PageType = Card;
-    SourceTable = "Radio Show Setup";
+    SourceTable = "RSH Radio Show Setup";
+    ApplicationArea = all;
+    UsageCategory = Administration;
 
     layout
     {

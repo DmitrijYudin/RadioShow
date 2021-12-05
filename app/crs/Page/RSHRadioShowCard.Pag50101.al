@@ -1,21 +1,13 @@
-page 50100 "Radio Show List"
+page 50101 "RSH Radio Show Card"
 {
-    ApplicationArea = All;
-    Caption = 'Radio Show List';
-    PageType = List;
-    SourceTable = "Radio Show";
-    UsageCategory = Lists;
-    CardPageId = "Radio Show Card";
-    Editable = true;
-    ModifyAllowed = true;
-    DeleteAllowed = true;
-    InsertAllowed = true;
-
+    Caption = 'RSH Radio Show Card';
+    PageType = Card;
+    SourceTable = "RSH Radio Show";
     layout
     {
         area(content)
         {
-            repeater(General)
+            group(General)
             {
                 field("No."; Rec."No.")
                 {

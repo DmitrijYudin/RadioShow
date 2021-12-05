@@ -1,11 +1,10 @@
-page 50106 "Radio Show Entries"
+page 50106 "RSH Radio Show Entries"
 {
-
-    ApplicationArea = All;
-    Caption = 'Radio show entries';
+    Caption = 'RSH Radio show entries';
     PageType = List;
-    SourceTable = "Radio Show Entry";
+    SourceTable = "RSH Radio Show Entry";
     UsageCategory = Lists;
+    ApplicationArea = All;
 
     layout
     {
@@ -23,7 +22,7 @@ page 50106 "Radio Show Entries"
                     ToolTip = 'Specifies the value of the Radio Show No. field.';
                     ApplicationArea = All;
                 }
-                field("Type"; Rec."Type")
+                field(Type; Rec."Type")
                 {
                     ToolTip = 'Specifies the value of the Type field.';
                     ApplicationArea = All;

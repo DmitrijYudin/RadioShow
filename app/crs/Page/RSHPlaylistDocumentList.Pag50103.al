@@ -1,10 +1,10 @@
-page 50103 "Playlist Document List"
+page 50103 "RSH Playlist Document List"
 {
 
     ApplicationArea = All;
-    Caption = 'Playlist Document List';
+    Caption = 'RSH Playlist Document List';
     PageType = List;
-    SourceTable = "Playlist Header";
+    SourceTable = "RSH Playlist Header";
     UsageCategory = Lists;
 
     layout
