@@ -13,17 +13,17 @@ page 50105 "RSH Playlist Item Rates"
         {
             repeater(General)
             {
-                field("Sourse Type"; Rec."Sourse Type")
+                field("Sourse Type"; Rec."Source Type")
                 {
                     ToolTip = 'Specifies the value of the Sourse Type field.';
                     ApplicationArea = All;
                 }
-                field("Playlist Item Rate Sourse Type"; Rec."Playlist Item Rate Sourse Type")
+                field("Playlist Item Rate Sourse Type"; Rec."Source Type")
                 {
                     ToolTip = 'Specifies the value of the Playlist Item Rate Sourse Type field.';
                     ApplicationArea = All;
                 }
-                field("Sourse No."; Rec."Sourse No.")
+                field("Sourse No."; Rec."Source No.")
                 {
                     ToolTip = 'Specifies the value of the Sourse No. field.';
                     ApplicationArea = All;

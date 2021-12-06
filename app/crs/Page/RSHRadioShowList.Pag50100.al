@@ -77,7 +77,7 @@ page 50100 "RSH Radio Show List"
                     ToolTip = 'Specifies the value of the Frequency field.';
                     ApplicationArea = All;
                 }
-                field("Frequency Enum"; Rec."Frequency Enum")
+                field("Frequency Enum"; Rec."Frequency")
                 {
                     ToolTip = 'Specifies the value of the Frequency Enum field.';
                     ApplicationArea = All;

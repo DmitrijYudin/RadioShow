@@ -5,22 +5,25 @@ table 50104 "RSH Playlist Item Rate"
 
     fields
     {
-        field(1; "Sourse Type"; Option)
+        // field(1; "Sourse Type"; Option)
+        // {
+        //     Caption = 'Sourse Type';
+        //     DataClassification = CustomerContent;
+        //     OptionMembers = Vendor,Customer;
+        // }
+        field(1; "Source Type"; Enum "RSH Playlist Item Source Type")
         {
-            Caption = 'Sourse Type';
-            DataClassification = CustomerContent;
-            OptionMembers = Vendor,Customer;
-        }
-        field(10; "Playlist Item Rate Sourse Type"; Enum "RSH Playlist Item Sourse Type")
-        {
-            Caption = 'Playlist Item Rate Sourse Type';
+            Caption = 'Source Type';
             DataClassification = CustomerContent;
         }
 
-        field(20; "Sourse No."; Code[20])
+        field(20; "Source No."; Code[20])
         {
-            Caption = 'Sourse No.';
+            Caption = 'Source No.';
             DataClassification = CustomerContent;
+            TableRelation = if ("Source Type" = const(Vendor)) Vendor."No."
+            else
+            if ("Source Type" = const(Customer)) Customer."No.";
         }
         field(30; "Item No."; Code[20])
         {
@@ -50,7 +53,7 @@ table 50104 "RSH Playlist Item Rate"
     }
     keys
     {
-        key(PK; "Sourse Type")
+        key(PK; "Source Type")
         {
             Clustered = true;
         }

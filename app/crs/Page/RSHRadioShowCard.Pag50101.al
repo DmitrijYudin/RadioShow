@@ -69,7 +69,7 @@ page 50101 "RSH Radio Show Card"
                     ToolTip = 'Specifies the value of the Frequency field.';
                     ApplicationArea = All;
                 }
-                field("Frequency Enum"; Rec."Frequency Enum")
+                field("Frequency Enum"; Rec."Frequency")
                 {
                     ToolTip = 'Specifies the value of the Frequency Enum field.';
                     ApplicationArea = All;

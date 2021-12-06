@@ -77,15 +77,15 @@ table 50100 "RSH Radio Show"
             Editable = false;
             TableRelation = "No. Series";
         }
-        field(1000; Frequency; Option)
+        // field(1000; Frequency; Option)
+        // {
+        //     Caption = 'Frequency';
+        //     DataClassification = ToBeClassified;
+        //     OptionMembers = Hourly,Daily,Weekly,Mounthly;
+        // }
+        field(1000; Frequency; Enum "RSH Frequency")
         {
             Caption = 'Frequency';
-            DataClassification = ToBeClassified;
-            OptionMembers = Hourly,Daily,Weekly,Mounthly;
-        }
-        field(1001; "Frequency Enum"; Enum "RSH Frequency")
-        {
-            Caption = 'Frequency Enum';
             DataClassification = ToBeClassified;
 
         }
@@ -191,7 +191,6 @@ table 50100 "RSH Radio Show"
             Commit();
         end;
         RadioShowSetup.TestField("Radio Show Nos.");
-
         // if RadioShowSetup."Radio Show Nos." = '' then
         //     Error(RadioShowNosErr, RadioShowSetup.FieldCaption("Radio Show Nos."), RadioShowSetup.TableCaption());
     end;

@@ -15,31 +15,37 @@ table 50103 "RSH Playlist Line"
             Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
-        field(10; Type; Option)
+        // field(10; Type; Option)
+        // {
+        //     Caption = 'Type';
+        //     DataClassification = CustomerContent;
+        //     OptionMembers = ,Resource,Show,Item;
+        // }
+        field(10; "Playlist Type"; Enum "RSH Playlist Line Type")
         {
-            Caption = 'Type';
-            DataClassification = CustomerContent;
-            OptionMembers = ,Resource,Show,Item;
-        }
-        field(11; "Playlist Line Type"; Enum "RSH Playlist Line Type")
-        {
-            Caption = 'Playlist Line Type';
+            Caption = 'Playlist Type';
             DataClassification = ToBeClassified;
         }
         field(20; "No."; Code[20])
         {
             Caption = 'No.';
             DataClassification = CustomerContent;
+            TableRelation =
+            if ("Playlist Type" = const(Resource)) Resource."No."
+            else
+            if ("Playlist Type" = const(Show)) "RSH Radio Show"."No."
+            else
+            if ("Playlist Type" = const(Item)) Item."No.";
         }
-        field(30; "Data Format"; Option)
+        // field(30; "Data Format"; Option)
+        // {
+        //     Caption = 'Data Format';
+        //     DataClassification = CustomerContent;
+        //     OptionMembers = ,Vinyl,CD,MP3,PSA,Advertisement;
+        // }
+        field(30; "Data Format"; Enum "RSH Playlist Line Data Format")
         {
             Caption = 'Data Format';
-            DataClassification = CustomerContent;
-            OptionMembers = ,Vinyl,CD,MP3,PSA,Advertisement;
-        }
-        field(31; "Playlist Line Data Format"; Enum "RSH Playlist Line Data Format")
-        {
-            Caption = 'Playlist Line Data Format';
             DataClassification = CustomerContent;
         }
         field(40; Publisher; Code[10])

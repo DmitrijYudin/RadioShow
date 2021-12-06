@@ -1,4 +1,4 @@
-enum 50103 "RSH Playlist Item Sourse Type"
+enum 50103 "RSH Playlist Item Source Type"
 {
     Extensible = true;
 
