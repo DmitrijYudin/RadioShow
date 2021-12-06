@@ -53,7 +53,11 @@ table 50100 "RSH Radio Show"
         field(100; "Average Listeners"; Decimal)
         {
             Caption = 'Average Listeners';
-            DataClassification = CustomerContent;
+            //DataClassification = CustomerContent;
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = average("RSH Listenership Entry"."Listener Count" where(Date = field("Date Filter")));
+            Description = 'FlowField:Listener Statistics';
         }
         field(110; "Audience Share"; Decimal)
         {
