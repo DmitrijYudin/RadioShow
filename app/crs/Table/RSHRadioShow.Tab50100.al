@@ -53,7 +53,6 @@ table 50100 "RSH Radio Show"
         field(100; "Average Listeners"; Decimal)
         {
             Caption = 'Average Listeners';
-            //DataClassification = CustomerContent;
             Editable = false;
             FieldClass = FlowField;
             CalcFormula = average("RSH Listenership Entry"."Listener Count" where(Date = field("Date Filter")));
@@ -62,17 +61,28 @@ table 50100 "RSH Radio Show"
         field(110; "Audience Share"; Decimal)
         {
             Caption = 'Audience Share';
-            DataClassification = CustomerContent;
+            Editable = false;
+            CalcFormula = average("RSH Listenership Entry"."Audience Share" where(Date = field("Date Filter")));
+            Description = 'FlowField: Listener Statistics';
+            FieldClass = FlowField;
         }
         field(120; "Advertising Revenue"; Decimal)
         {
             Caption = 'Advertising Revenue';
-            DataClassification = CustomerContent;
+            Editable = false;
+            CalcFormula = sum("RSH Radio Show Entry"."Fee Amount" where(Date = field("Date Filter"),
+                                                                        "Data format" = filter(Advertisement)));
+            Description = 'FlowField: Playlist Ledger';
+            FieldClass = FlowField;
         }
         field(130; "Royalty Cost"; Decimal)
         {
             Caption = 'Royalty Cost';
-            DataClassification = CustomerContent;
+            Editable = false;
+            CalcFormula = sum("RSH Radio Show Entry"."Fee Amount" where(Date = field("Date Filter"),
+                                                                       "Data format" = filter(Vinyl | CD | MP3)));
+            Description = 'FlowField: Playlist Ledger';
+            FieldClass = FlowField;
         }
 
         field(140; "No. Series"; Code[20])
